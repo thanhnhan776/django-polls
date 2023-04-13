@@ -10,12 +10,14 @@ On host machine:
 > docker exec -it djpolls sh
 ```
 
+Open VSCode, run command `Python: Create Environment`. Then select Python interpreter to the newly create venv.
+
 On docker container:
 
 ```zsh
 > cd /djpolls
 > ./cmd/django-init.sh
-> source .my-venv/bin/activate
+> source .venv/bin/activate
 ```
 
 To stop the running container:
